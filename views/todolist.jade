@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1.
+        To-Do List
+    ul
+        each task in todolist
+            li
+                div #{task.taskname}
+
+    li
+        a(href="/removetask") Remove
+    li
+        a(href="/newtask") Add

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    form#formRemoveTask(name="deletetask",method="post",action="/deletetask")
+        input#inputUserName(type="text", placeholder="taskname", name="taskname")
+        button#btnSubmit(type="submit") submit
